@@ -22,4 +22,4 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}  # Add your SSH private key here
           port: ${{ secrets.HOSTINGER_PORT }}
           source: "."
-          target: "/home/u962339350/domains/color-uncover-com-228880.hostingersite.com/public_html"
+          target: "/home/u962339350/domains/color-uncover.com/public_html"
