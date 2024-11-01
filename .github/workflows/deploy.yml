@@ -14,10 +14,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to Hostinger
-        uses: samuelmeuli/action-scp@v2
+        uses: appleboy/scp-action@v0.1.4  # Use this action instead
         with:
           host: ${{ secrets.HOSTINGER_HOST }}
           username: ${{ secrets.HOSTINGER_USERNAME }}
-          port: ${{ secrets.HOSTINGER_PORT }}  # Add this line to specify the port
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}  # Add your SSH private key here
+          port: ${{ secrets.HOSTINGER_PORT }}
           source: "."
-          target: "/files/public_html"  # Adjust the target path
+          target: "/files/public_html"
