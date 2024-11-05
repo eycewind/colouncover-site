@@ -955,6 +955,10 @@ section,
   font-size: 18px;
   letter-spacing: 1px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 .portfolio-amazon-btn:hover {
   background-color: #b594d3;
